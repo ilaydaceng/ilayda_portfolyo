@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Finans Takip Uygulaması",
+    "description": "PyQt5 ve SQLite ile kişisel finansları yönetmenizi sağlayan masaüstü uygulama.",
+    "link": "https://github.com/ilaydaceng/finans-takip-uygulamas-"
+  },
+  {
+    "title": "Macera Oyunu",
+    "description": "Java ile hazırlanmış minik macera oyunu",
+    "link": "https://github.com/ilaydaceng/Adventure-Game"
+  },
+  {
+    "title": "Yapılacaklar Listesi",
+    "description": "HTML ile yazılan yapılacaklar listesi çalışması",
+    "link": "https://github.com/ilaydaceng/To--Do-List"
+  },
+  {
+    "title": "React Portfolyo Web Sitesi",
+    "description": "Modern ve duyarlı bir kişisel portfolyo sitesi.",
+    "link": "https://github.com/ilaydaceng/ilayda_portfolyo"
+  }
+]
