@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function Navbar({ lang, toggleLang, text }) {
-    const [active, setActive] = useState('home');
+    const [active, setActive] = useState("home");
     const [menuOpen, setMenuOpen] = useState(false);
 
     const sections = [
-        { id: 'home', label: text.home },
-        { id: 'about', label: text.about },
-        { id: 'skills', label: text.skills },
-        { id: 'portfolio', label: text.portfolio },
-        { id: 'contact', label: text.contact }
+        { id: "home", label: text.home },
+        { id: "about", label: text.about },
+        { id: "skills", label: text.skills },
+        { id: "portfolio", label: text.portfolio },
+        { id: "contact", label: text.contact },
     ];
 
     useEffect(() => {
@@ -29,8 +29,8 @@ export default function Navbar({ lang, toggleLang, text }) {
             }
         }
 
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     }, [sections]);
 
     function handleClick(id) {
@@ -38,10 +38,9 @@ export default function Navbar({ lang, toggleLang, text }) {
         setMenuOpen(false);
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     }
-
     return (
         <>
             <nav className="navbar">

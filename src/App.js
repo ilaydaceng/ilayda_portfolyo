@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -15,6 +15,24 @@ function App() {
     const toggleLang = () => {
         setLang((prev) => (prev === "tr" ? "en" : "tr"));
     };
+
+    // Sayfa yüklendiğinde scroll en başa gitsin
+    useEffect(() => {
+        // Sayfa yüklendikten hemen sonra scroll'u sıfırla
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 10);
+
+        // Sayfa yenilenirken de scroll'u en başa çek
+        const handleBeforeUnload = () => {
+            window.scrollTo(0, 0);
+        };
+        window.addEventListener("beforeunload", handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, []);
 
     return (
         <div className="App">

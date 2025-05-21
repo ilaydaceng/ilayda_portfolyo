@@ -66,7 +66,7 @@ export default function About() {
                 </div>
 
                 {/* Hakkımda metni */}
-                <section className="about-section">
+                <section className="about-section" id="about">
                     <h2>{t.aboutTitle}</h2>
                     <p>{t.aboutText1}</p>
                     <p>{t.aboutText2}</p>

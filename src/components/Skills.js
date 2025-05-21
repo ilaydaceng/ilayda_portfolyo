@@ -73,7 +73,7 @@ export default function Skills() {
                     </button>
                 </div>
 
-                <section className="skills-section">
+                <section className="skills-section" id="skills">
                     <h2>{t.skillsTitle}</h2>
                     <ul>
                         {t.skillsList.map((skill, idx) => (
